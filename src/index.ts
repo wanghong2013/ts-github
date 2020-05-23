@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-05-17 21:13:54
- * @LastEditTime: 2020-05-23 12:21:25
+ * @LastEditTime: 2020-05-23 12:26:48
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /ts-github/src/index.ts
@@ -19,6 +19,6 @@ svc.getUserInfo("wanghong2013",(user:User)=>{
 })
 
 
-svc.getUserRepo("wanghong2013",(repos:Repo)=>{
-    console.log(repos)
-})
+svc.getRepos("wanghong2013", (repos: Repo[]) => {
+    console.log(repos);
+  })
